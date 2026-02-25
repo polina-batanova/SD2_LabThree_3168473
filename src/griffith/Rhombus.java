@@ -15,7 +15,7 @@ public class Rhombus extends Shape {
     }
 
     public double perimeter() {
-        return 0;
+        return 4 * side;
     }
     public String toString() {
         return super.toString() + " side: " + side + " height: " + height;
