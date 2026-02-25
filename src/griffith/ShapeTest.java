@@ -29,4 +29,9 @@ public class ShapeTest {
         Rhombus r = new Rhombus("Rhombus", 4, 5);
         assertEquals(20, r.area(), 0);
     }
+    @Test
+    public void testRhombusPerimeter() {
+        Rhombus r = new Rhombus("Rhombus", 4, 5);
+        assertEquals(16, r.perimeter(), 0);
+    }
 }
