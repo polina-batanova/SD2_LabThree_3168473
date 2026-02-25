@@ -45,4 +45,9 @@ public class ShapeTest {
         RightAngledTriangle t = new RightAngledTriangle("Triangle", 3, 4);
         assertEquals(6, t.area(), 0);
     }
+    @Test
+    public void testTrianglePerimeter() {
+        RightAngledTriangle t = new RightAngledTriangle("Triangle", 3, 4);
+        assertEquals(12, t.perimeter(), 0);
+    }
 }
