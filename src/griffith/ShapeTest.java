@@ -39,4 +39,10 @@ public class ShapeTest {
         Rhombus r = new Rhombus("Rhombus", 4, 5);
         assertEquals("Rhombus side: 4.0 height: 5.0", r.toString());
     }
+
+    @Test
+    public void testTriangleArea() {
+        RightAngledTriangle t = new RightAngledTriangle("Triangle", 3, 4);
+        assertEquals(6, t.area(), 0);
+    }
 }
