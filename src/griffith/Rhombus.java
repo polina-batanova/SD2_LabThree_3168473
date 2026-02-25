@@ -10,13 +10,17 @@ public class Rhombus extends Shape {
         this.height = height;
     }
 
+    @Override
     public double area() {
         return side * height;
     }
 
+    @Override
     public double perimeter() {
         return 4 * side;
     }
+
+    @Override
     public String toString() {
         return super.toString() + " side: " + side + " height: " + height;
     }

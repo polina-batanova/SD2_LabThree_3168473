@@ -14,11 +14,14 @@ public class RightAngledTriangle extends Shape {
     public double area() {
         return (base * height) / 2;
     }
+
     @Override
     public double perimeter() {
-        return 0;
+        double hypotenuse = Math.sqrt(base * base + height * height);
+        return base + height + hypotenuse;
     }
 
+    @Override
     public String toString() {
         return super.toString() + " base: " + base + " height: " + height;
     }
