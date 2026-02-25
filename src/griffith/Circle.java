@@ -14,7 +14,7 @@ public class Circle extends Shape {
     }
 
     public double perimeter() {
-        return 0;
+        return 2 * Math.PI * radius;
     }
 
     public String toString() {
