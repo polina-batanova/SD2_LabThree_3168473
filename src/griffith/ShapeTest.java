@@ -34,4 +34,9 @@ public class ShapeTest {
         Rhombus r = new Rhombus("Rhombus", 4, 5);
         assertEquals(16, r.perimeter(), 0);
     }
+    @Test
+    public void testRhombusToString() {
+        Rhombus r = new Rhombus("Rhombus", 4, 5);
+        assertEquals("Rhombus side: 4.0 height: 5.0", r.toString());
+    }
 }
