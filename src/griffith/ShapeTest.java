@@ -17,4 +17,10 @@ public class ShapeTest {
         Circle c = new Circle("Circle", 3);
         assertEquals(2 * Math.PI * 3, c.perimeter(), 0);
     }
+
+    @Test
+    public void testCircleToString() {
+        Circle c = new Circle("Circle", 3);
+        assertEquals("Circle radius: 3.0", c.toString());
+    }
 }
