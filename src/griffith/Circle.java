@@ -9,4 +9,16 @@ public class Circle extends Shape {
         this.radius = radius;
     }
 
+    public double area() {
+        return 0;
+    }
+
+    public double perimeter() {
+        return 0;
+    }
+
+    public String toString() {
+        return super.toString() + " radius: " + radius;
+    }
+
 }
