@@ -9,4 +9,16 @@ public class RightAngledTriangle extends Shape {
         this.base = base;
         this.height = height;
     }
+
+    public double area() {
+        return 0;
+    }
+
+    public double perimeter() {
+        return 0;
+    }
+
+    public String toString() {
+        return super.toString() + " base: " + base + " height: " + height;
+    }
 }
