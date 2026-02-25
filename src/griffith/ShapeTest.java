@@ -23,4 +23,10 @@ public class ShapeTest {
         Circle c = new Circle("Circle", 3);
         assertEquals("Circle radius: 3.0", c.toString());
     }
+
+    @Test
+    public void testRhombusArea() {
+        Rhombus r = new Rhombus("Rhombus", 4, 5);
+        assertEquals(20, r.area(), 0);
+    }
 }
