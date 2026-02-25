@@ -10,10 +10,11 @@ public class RightAngledTriangle extends Shape {
         this.height = height;
     }
 
+    @Override
     public double area() {
-        return 0;
+        return (base * height) / 2;
     }
-
+    @Override
     public double perimeter() {
         return 0;
     }
