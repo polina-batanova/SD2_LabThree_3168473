@@ -11,7 +11,7 @@ public class Rhombus extends Shape {
     }
 
     public double area() {
-        return 0;
+        return side * height;
     }
 
     public double perimeter() {
