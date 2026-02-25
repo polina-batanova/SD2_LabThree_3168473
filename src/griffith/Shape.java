@@ -14,4 +14,8 @@ public abstract class Shape {
         this.name = name;
     }
 
+    public abstract double area();
+
+    public abstract double perimeter();
+
 }
