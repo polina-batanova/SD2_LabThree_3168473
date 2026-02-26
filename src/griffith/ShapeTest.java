@@ -72,36 +72,46 @@ public class ShapeTest {
         assertEquals("Triangle base: 3.0 height: 4.0", t.toString());
     }
 
+    // integration test
     @Test
     public void integrationTestShapes() {
 
+        // method for storing different types of Shape objects
         ArrayList<Shape> shapes = new ArrayList<>();
 
+        // add two Circles
         shapes.add(new Circle("Circle", 3));
         shapes.add(new Circle("Circle", 2));
+
+        // add two Rhombuses
         shapes.add(new Rhombus("Rhombus", 4, 5));
         shapes.add(new Rhombus("Rhombus", 3, 2));
+
+        // add two Right Angled Triangles
         shapes.add(new RightAngledTriangle("Triangle", 3, 4));
         shapes.add(new RightAngledTriangle("Triangle", 6, 8));
 
+        // expected area values
         double[] expectedAreas = {
-                Math.PI*9,
-                Math.PI*4,
-                20,
-                6,
-                6,
-                24
+                Math.PI*9, // circle radius 3
+                Math.PI*4, // circle radius 2
+                20, // rhombus
+                6, // rhombus
+                6, // triangle
+                24 // triangle
         };
 
+        // expected perimeter values
         double[] expectedPerimeters = {
-                2*Math.PI*3,
-                2*Math.PI*2,
-                16,
-                12,
-                12,
-                24
+                2*Math.PI*3, // circle radius 3
+                2*Math.PI*2, // circle radius 2
+                16, // rhombus
+                12, // rhombus
+                12, // triangle
+                24 // triangle
         };
 
+        // loop for comparing actual results with expected values
         for(int i = 0; i < shapes.size(); i++) {
             assertEquals(expectedAreas[i], shapes.get(i).area(), 0);
             assertEquals(expectedPerimeters[i], shapes.get(i).perimeter(), 0);
