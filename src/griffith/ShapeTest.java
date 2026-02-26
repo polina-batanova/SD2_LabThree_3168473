@@ -65,6 +65,12 @@ public class ShapeTest {
         assertEquals(12, t.perimeter(), 0);
     }
 
+    // test triangle string representation
+    @Test
+    public void testTriangleToString() {
+        RightAngledTriangle t = new RightAngledTriangle("Triangle", 3, 4);
+        assertEquals("Triangle base: 3.0 height: 4.0", t.toString());
+    }
 
     @Test
     public void integrationTestShapes() {
