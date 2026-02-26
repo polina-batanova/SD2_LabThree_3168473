@@ -30,16 +30,21 @@ public class ShapeTest {
         assertEquals("Circle radius: 3.0", c.toString());
     }
 
+    // test rhombus area
     @Test
     public void testRhombusArea() {
         Rhombus r = new Rhombus("Rhombus", 4, 5);
         assertEquals(20, r.area(), 0);
     }
+
+    // test rhombus perimeter
     @Test
     public void testRhombusPerimeter() {
         Rhombus r = new Rhombus("Rhombus", 4, 5);
         assertEquals(16, r.perimeter(), 0);
     }
+
+    // test rhombus string representation
     @Test
     public void testRhombusToString() {
         Rhombus r = new Rhombus("Rhombus", 4, 5);
