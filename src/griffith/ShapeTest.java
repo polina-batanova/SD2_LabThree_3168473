@@ -51,16 +51,20 @@ public class ShapeTest {
         assertEquals("Rhombus side: 4.0 height: 5.0", r.toString());
     }
 
+    // test triangle area
     @Test
     public void testTriangleArea() {
         RightAngledTriangle t = new RightAngledTriangle("Triangle", 3, 4);
         assertEquals(6, t.area(), 0);
     }
+
+    // test triangle perimeter
     @Test
     public void testTrianglePerimeter() {
         RightAngledTriangle t = new RightAngledTriangle("Triangle", 3, 4);
         assertEquals(12, t.perimeter(), 0);
     }
+
 
     @Test
     public void integrationTestShapes() {
