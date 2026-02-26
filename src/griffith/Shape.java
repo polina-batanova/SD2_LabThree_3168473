@@ -1,5 +1,6 @@
 package griffith;
 
+// Polina Batanova 3168473
 public abstract class Shape {
     private String name;
 
@@ -7,6 +8,7 @@ public abstract class Shape {
         this.name = name;
     }
 
+    // getter and setter
     public String getName() {
         return name;
     }
@@ -14,6 +16,7 @@ public abstract class Shape {
         this.name = name;
     }
 
+    // abstract methods
     public abstract double area();
 
     public abstract double perimeter();
